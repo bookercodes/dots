@@ -1,0 +1,36 @@
+
+:: open
+hyper - o     ; open
+open < escape ; default
+open < o      : open -a "Google Chrome"           ; skhd -k "escape"
+open < c      : open -a "Visual Studio Code"      ; skhd -k "escape"
+open < s      : open -a "Slack"                   ; skhd -k "escape"
+open < n      : open -a "Notion"                  ; skhd -k "escape"
+open < f      : open -a "Finder"                  ; skhd -k "escape"
+open < d      : open -a "Notes"                   ; skhd -k "escape"
+open < p      : open -a "Adobe Premiere Pro 2024" ; skhd -k "escape"
+open < return : open -a "Warp"                    ; skhd -k "escape"
+
+:: syst
+hyper - s     ; syst
+syst < l      : open raycast://extensions/raycast/system/lock-screen              ; skhd -k "escape"
+syst < d      : open raycast://extensions/raycast/system/toggle-system-appearance ; skhd -k "escape"
+syst < escape ; default
+
+:: rayy
+hyper - r     ; rayy
+rayy < escape ; default
+rayy < a      : open raycast://extensions/raycast/raycast-ai/send-to-ai-chat         ; skhd -k "escape"
+rayy < i      : open raycast://extensions/raycast/raycast-ai/ai-chat                 ; skhd -k "escape"
+rayy < t      : open raycast://extensions/Codely/google-chrome/search-tab            ; skhd -k "escape"
+rayy < h      : open raycast://extensions/Codely/google-chrome/search-history        ; skhd -k "escape"
+rayy < h      : open raycast://extensions/Codely/google-chrome/search-bookmarks      ; skhd -k "escape"
+rayy < c      : open raycast://extensions/raycast/system/open-camera                 ; skhd -k "escape"
+rayy < e      : open raycast://extensions/raycast/emoji-symbols/search-emoji-symbols ; skhd -k "escape"
+
+
+hyper - d : open -g raycast://extensions/raycast/system/hide-all-apps-except-frontmost ; open -g raycast://extensions/raycast/window-management/almost-maximize
+
+# https://github.com/koekeishiya/skhd/issues/1
+# hyper (cmd + shift + alt + ctrl)
+# meh (shift + alt + ctrl)
